@@ -1,8 +1,13 @@
 package objects;
 import java.util.ArrayList;
 
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+
 
 public class User {
+
+    String imagePath;
 
     String firstname;
     String secondname;
