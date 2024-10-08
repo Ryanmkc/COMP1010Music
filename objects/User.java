@@ -21,7 +21,7 @@ public class User {
     ArrayList<song> likedSong = new ArrayList<song>();
 
     Date dob;
-    boolean explicitcontentallowed;
+    boolean isMinor;
     String email;
     
 }
