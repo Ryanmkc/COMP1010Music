@@ -5,15 +5,18 @@ public class User {
 
     String firstname;
     String secondname;
-    String username;
+    // String username; the name of the class is the username no need to double up
     String password;
+    String bio;
 
     ArrayList<Artist> followingArtist = new ArrayList<Artist>();
     ArrayList<User> followingUser = new ArrayList<User>();
     ArrayList<User> followedByUser = new ArrayList<User>();
-    ArrayList<playList> created = new ArrayList<playList>();
-    ArrayList<playList> collabing = new ArrayList<playList>();
-    ArrayList<playList> followingPlaylist = new ArrayList<playList>();
+
+    ArrayList<Playlist> created = new ArrayList<Playlist>();
+    ArrayList<Playlist> collabing = new ArrayList<Playlist>();
+    ArrayList<Playlist> followingPlaylist = new ArrayList<Playlist>();
+
     ArrayList<Album> likedAlbum = new ArrayList<Album>();
     ArrayList<song> likedSong = new ArrayList<song>();
 
@@ -21,6 +24,4 @@ public class User {
     boolean explicitcontentallowed;
     String email;
     
-    // add arraylist of fav artists and saved playlists
-    // i need to make objects for both
 }
