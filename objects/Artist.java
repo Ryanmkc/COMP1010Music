@@ -7,7 +7,7 @@ import javax.imageio.ImageIO;
 public class Artist {
 
     String imagePath;
-
+    // add bands
     String firstname;
     String secondname;
     // String username; the name of the class is the username no need to double up

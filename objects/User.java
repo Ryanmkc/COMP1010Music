@@ -26,13 +26,13 @@ public class User {
     ArrayList<Playlist> collabing = new ArrayList<Playlist>();
     ArrayList<Playlist> followingPlaylist = new ArrayList<Playlist>();
 
-    ArrayList<studio> followingStudio = new ArrayList<studio>();
-    ArrayList<Podcast> followedingPodcast = new ArrayList<Podcast>();
+    //ArrayList<studio> followingStudio = new ArrayList<studio>();
+    //ArrayList<Podcast> followedingPodcast = new ArrayList<Podcast>();
     //ArrayList<PodcastEp> followedByUser = new ArrayList<PodcastEp>(); this will be in liked playlist
 
     Date dob;
     Boolean isMinor;
     String email;
-    membership member;
+    //membership member;
     
 }

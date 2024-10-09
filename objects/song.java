@@ -9,6 +9,7 @@ import java.io.IOException;
 
 public class Song {
     //String name; the name of the class is the username no need to double up
+// add album or no album
     Artist MusicianName;
     Album inside;
     Song next;
