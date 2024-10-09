@@ -33,5 +33,6 @@ public class User {
     Date dob;
     Boolean isMinor;
     String email;
+    membership member;
     
 }

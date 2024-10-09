@@ -20,4 +20,5 @@ public class PodcastEp {
     //String image; // change this to an image
     //String Audio; // change this to an audio
     String imagePath;
+    String audioPath;
 }   
