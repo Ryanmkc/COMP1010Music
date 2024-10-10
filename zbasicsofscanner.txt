@@ -1,0 +1,25 @@
+ import javax.swing.*;
+import java.awt.image.BufferedImage;
+import java.util.Scanner;
+ 
+ // Create a Scanner object to capture input from the console
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter their name
+        System.out.print("Please enter your name: ");
+
+        // Read the input and store it in a String variable
+        String name = scanner.nextLine();
+
+        // Output the name back to the user
+        System.out.println("Hello, " + name + "!");
+
+        // Example of using an if condition to check the input
+        if (name.equalsIgnoreCase("John")) {
+            System.out.println("Welcome, John! We've been expecting you.");
+        } else {
+            System.out.println("Nice to meet you, " + name + "!");
+        }
+
+        // Close the scanner
+        scanner.close();
