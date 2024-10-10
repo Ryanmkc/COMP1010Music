@@ -18,3 +18,5 @@ public ArrayList<Song> Shuffle(ArrayList<Song> array) {
     Collections.shuffle(array);
     return array;
 }
+
+// ryan u suck
