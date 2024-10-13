@@ -14,7 +14,7 @@ public class Main {
 }
 }
 
-public ArrayList<Song> Shuffle(ArrayList<Song> array) {
+public ArrayList<song> Shuffle(ArrayList<song> array) {
     Collections.shuffle(array);
     return array;
 }
