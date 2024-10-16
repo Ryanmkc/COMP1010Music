@@ -19,7 +19,7 @@ public class Displayimage {
         try {
             image = ImageIO.read(new File(imagePath));  // Load image from the provided path
             if (image != null) {
-                System.out.println("Image loaded successfully.");
+                System.out.println("img check");
             } else {
                 System.out.println("Failed to load the image. ImageIO.read() returned null.");
             }
