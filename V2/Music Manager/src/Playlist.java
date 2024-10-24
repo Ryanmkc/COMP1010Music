@@ -13,7 +13,7 @@ public class Playlist {
         songs = new ArrayList<>();
         loadPlaylist();
         if (songs.isEmpty()) {
-            currentIndex = 0; // Defaults at 0
+            currentIndex = 0; // Defaults playlist index to 0 i.e first song
         }
     }
 

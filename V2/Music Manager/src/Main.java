@@ -27,12 +27,16 @@ public class Main {
         
         // Uncomment one at a time to Run:
 
-        // playlist.startPlaylist();  // Start from first song
+        // v Start Playlist v (Do Not Uncomment This Line)
+        // playlist.startPlaylist();
 
-        // playlist.nextSong();        // Skip song
+        // v Skip Song v (Do Not Uncomment This Line)
+        // playlist.nextSong();
 
-        // playlist.previousSong();    // Go previous song
+        // v Previous Song v (Do Not Uncomment This Line)
+        // playlist.previousSong();
 
-        // playlist.shufflePlay();     // Shuffle playlist
+        // v Shuffle v (Do Not Uncomment This Line)
+        // playlist.shufflePlay();
     }
 }

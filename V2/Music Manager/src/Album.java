@@ -11,7 +11,7 @@ public class Album {
         this.songs = new ArrayList<>();
     }
 
-    // Adds a song to an album and sets the album reference for the song
+    // Adds song to an album and sets the album reference for the song
     void addSong(Song song) {
         song = new Song(song.getSongTitle(), song.getArtist(), this);
         songs.add(song);
