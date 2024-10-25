@@ -29,7 +29,6 @@ public class Song {
         return album;
     }
 
-    @Override
     public String toString() {
         if (album != null) {
             return songTitle + " by " + artist.getName() + " from the album \"" + album.getTitle() + "\"";
