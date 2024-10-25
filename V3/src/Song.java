@@ -2,26 +2,19 @@ public class Song {
     String songTitle;
     Artist artist;
     Album album;
-    boolean isSingle; // inckude in constructors
-    Song next;
-    Song back;
 
     // Constructor for a song without an album (a single)
     Song(String songTitle, Artist artist) {
         this.songTitle = songTitle;
         this.artist = artist;
         this.album = null; // No album, song is a Single
-        this.isSingle = true;
     }
 
     // Constructor for a song with an album
-    Song(String songTitle, Artist artist, Album album, Song next, Song back) {
+    Song(String songTitle, Artist artist, Album album) {
         this.songTitle = songTitle;
         this.artist = artist;
         this.album = album;
-        this.next = next;
-        this.back = back;
-        this.isSingle = false;
     }
 
     String getSongTitle() {
@@ -39,14 +32,6 @@ public class Song {
     @Override
     public String toString() {
         if (album != null) {
-            return songTitle + " by " + artist.getName() + " from the album \"" + album.getTitle() + "\"";
-        } else {
-            return songTitle + " by " + artist.getName() + " (Single)";
-        }
-    }
-
-    public String songNameToString() {
-        if (isSingle = false) {
             return songTitle + " by " + artist.getName() + " from the album \"" + album.getTitle() + "\"";
         } else {
             return songTitle + " by " + artist.getName() + " (Single)";

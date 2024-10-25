@@ -1,5 +1,11 @@
+
+import java.util.ArrayList;
+
 public class Artist {
     String name;
+    ArrayList<Album> Albums = new ArrayList<Album>();
+
+    Artist(String name) {}
 
     // Constructor
     Artist(String name) {
