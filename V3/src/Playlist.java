@@ -29,7 +29,7 @@ public class Playlist {
 
     // Start playlist from the first song
     void current() {
-        System.out.println("Now Playing: " + songs.get(currentIndex));  // Play song at current index
+        System.out.println("Now Playing: " + songs.get(currentIndex)); // Play song at current index
     }
 
     // Skip to next song and update index
@@ -55,7 +55,7 @@ public class Playlist {
 
     // Saves current index and playlist to the CSV file, overwriting each time
     void savePlaylist() throws Exception {
-        FileWriter writer = new FileWriter("MusicLibraryCSV.csv", false);  // Overwrite the file
+        FileWriter writer = new FileWriter("MusicLibraryCSV.csv", false); // Overwrite the file
 
         // Writes current index as first line
         writer.write(currentIndex + "\n");
@@ -71,7 +71,9 @@ public class Playlist {
     // Method to delete the CSV file
     void deleteCSV() {
         File file = new File("MusicLibraryCSV.csv");
-            file.delete();  // Delete the file
+        if (file.exists()) {
+            file.delete();  // Delete the file if it exists
+        }
     }    
 
     // Loads the playlist from the CSV file
@@ -103,10 +105,7 @@ public class Playlist {
 
                 songs.add(song);  // Add the song to the playlist
             }
-
             reader.close();
-        } else {
-            currentIndex = 0;  // Default to index 0 upon file creation / if file doesn't exist
         }
     }
 }

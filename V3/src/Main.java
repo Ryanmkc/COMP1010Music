@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        // Create the artists
+        // Creates Artists
         Artist arcticMonkeys = new Artist("Arctic Monkeys");
         Artist frankOcean = new Artist("Frank Ocean");
         Artist theWeeknd = new Artist("The Weeknd");
         Artist m83 = new Artist("M83");
         Artist tameImpala = new Artist("Tame Impala");
 
-        // Creates Albums / Singles / Songs
+        // Creates Albums/Singles/Songs
         Album amAlbum = new Album("AM", arcticMonkeys);
         amAlbum.addSong(new Song("R U Mine?", arcticMonkeys));
         amAlbum.addSong(new Song("Snap Out of It", arcticMonkeys));
@@ -30,7 +30,7 @@ public class Main {
         hurryUpWereDreaming.addSong(new Song("Wait", m83));
 
 
-        // Creates playlist, adds songs / albums
+        // Creates playlist, adds songs/albums
         Playlist playlist = new Playlist();
         playlist.addAlbum(amAlbum);
         playlist.addSong(novacane);
@@ -45,7 +45,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean programRunning = true;  // Keeps the loop running
 
-        // Keeps prompting for commands until the user decides to stop
+        // Reminds user of valid commands
         while (programRunning) {
             System.out.println("Enter a command (Current, Skip, Previous, Shuffle, Stop):");
             String input = scanner.nextLine();
@@ -59,12 +59,11 @@ public class Main {
             } else if (input.equalsIgnoreCase("shuffle")) {
                 playlist.shufflePlay();
             } else if (input.equalsIgnoreCase("stop")) {
-                programRunning = false;  // Exits loop
+                programRunning = false; // Exits loop
                 System.out.println("Stopping the Music Manager");
                 playlist.deleteCSV(); // Deletes CSV
             }
         }
-
         scanner.close();
     }
 }
